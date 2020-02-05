@@ -1,0 +1,131 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #e6e6e6;
+    font-family: 'Titillium Web', sans-serif;
+  }
+ /* ------------ header ------------ */
+ #header {
+    background: black;
+    padding: 1px;
+    margin-bottom: 50px;
+    color: rgb(151, 145, 145);
+  }
+ 
+  /* ------------ container ------------ */
+  .container {
+    margin: 0;
+    padding: 0;
+    max-width: 600px;
+    margin-left: 400px ;
+    font: 18px/1.25em 'Lato', sans-serif;
+   }
+
+   /* ------------ add item ------------ */
+    .add-to-do {
+    position: relative;
+    display: inline-flex;
+    background: #e6e6e6;
+    width: 700px;
+    height:45px;
+    margin-bottom: 40px;
+  }
+  
+    #add-task-btn {
+    margin-left: 50px; 
+    padding-top: 8px;
+  }
+      
+  .add-to-do input,
+  .add-to-do button {
+    color: #fff;
+    box-sizing: border-box;
+    font-size: 1.25em;
+    padding: 15px;
+    margin-left: 80px;
+    border: none;
+    border-radius: 10px;
+  }
+
+     
+   .add-to-do input {
+    flex-grow: 1;
+    color: rgb(3, 3, 3);
+  }
+
+  .add-to-do button {
+    background: #1a06cc;
+  }
+  .add-to-do button:hover {
+    background: #75b3e6e5;
+   }
+/* ------------ content ------------ */
+.content{
+    width:700px;
+    background-color: #FFF;
+    overflow: auto;
+    text-align: center;
+    border: 1px solid rgb(177, 173, 173);
+    margin-left: 435px;
+    
+}
+.content ul{
+    padding: 0;
+    margin: 0;
+}
+
+.item{
+    width:700px;
+    height: 45px;
+    position: relative;
+    border-bottom: 1px solid rgba(3, 3, 3, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+/*-------square--------*/
+.item i.co{
+    position: absolute;
+    font-size: 25px;
+    padding-left:5px;
+    left:15px;
+    top:10px;
+}
+.item i.co:hover{
+    cursor: pointer;
+}
+.fa-check-square{
+    color:#699bf7;
+}
+/*--------text---------*/
+.item p.text{
+    position: absolute;
+    padding:0;
+    margin:0;
+    font-size: 20px;
+    left: 60px;
+    top:10px;
+    
+}
+
+.lineThrough {
+    text-decoration: line-through;
+    color : rgb(180, 177, 177);
+}
+
+/*-------trush---------*/
+.item i.de{
+    position: absolute; 
+    font-size: 25px;
+    right:15px;
+    top:10px;
+    color: gray ;
+}
+.item i.de:hover{
+    color:#af0000;
+    cursor: pointer;
+    opacity: 0.5;
+}
+  
