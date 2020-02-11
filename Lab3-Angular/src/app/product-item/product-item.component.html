@@ -1,0 +1,34 @@
+<h2>Мягкие игрушки</h2>
+<div *ngFor="let item of items">
+  <h3>
+    <a id="title" title="Посмотреть на Aliexpress" href="{{item.link}}">
+      {{ item.name }}
+    </a>
+  </h3>
+
+    <a title="Заказать на Aliexpress" href="{{item.link}}">
+      <img src="{{ item.image }}">
+    </a>
+
+  <p *ngIf="item.description">
+    {{ item.description }}
+  </p>
+
+  <p *ngIf="item.rating">
+    <img id="star" src="https://iconsplace.com/wp-content/uploads/_icons/ff0000/256/png/rating-star-icon-14-256.png">
+    {{ item.rating }}
+  </p>
+
+  <a target="_blank" href="https://api.whatsapp.com/send?text=See%20this!%20{{item.link}}" data-action="share/whatsapp/share"><button>
+    <img id="whatsapp" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1024px-WhatsApp_logo-color-vertical.svg.png">
+  </button></a>
+
+  <a target="_blank" href="https://t.me/share/url?url=https%3A%2F%2Fangular-mdcqjn.stackblitz.io%2F{{item.link}}" data-action="share/whatsapp/share"><button>
+    <img id="telegram" src="https://image.winudf.com/v2/image1/Y29tLndXaGF0c2FwcGpiXzg2MTY3NTRfaWNvbl8xNTUwNzI3OTE1XzA1OA/icon.png?w=170&fakeurl=1">
+  </button></a>
+</div>
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
