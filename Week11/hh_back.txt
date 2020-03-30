@@ -1,0 +1,12 @@
+virtualenv hh -p python3
+cd hh
+cd Scripts
+activate.bat
+(hh) C:\Users\Admin\Webka\Lab9>pip freeze > requirements.txt
+(hh) C:\Users\Admin\Webka\Lab9>pip install -r requirements.txt
+(hh) C:\Users\Admin\Webka\Lab9>pip install django==2.2
+(hh) C:\Users\Admin\Webka\Lab9>python hh/Scripts/django-admin.py startproject hh_back
+(hh) C:\Users\Admin\Webka\Lab9\hh_back>python manage.py migrate
+(hh) C:\Users\Admin\Webka\Lab9\hh_back>python manage.py runserver
+(hh) C:\Users\Admin\Webka\Lab9\hh_back>python manage.py startapp api
+
