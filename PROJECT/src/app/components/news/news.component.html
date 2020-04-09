@@ -1,0 +1,17 @@
+<div class="new">НОВОСТИ</div>
+
+<div>
+  <div class="flex-row-container" >
+      <div class="flex-row-item" *ngFor="let new of news" >
+         
+        <p>
+          <img src="{{ new.image }}" appHover>
+        </p>
+        <p class="text">
+          {{ new.name }}
+        </p>
+      </div>
+      
+  </div>
+</div>
+
